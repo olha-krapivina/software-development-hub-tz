@@ -430,6 +430,58 @@ p, span{
     }
 }
 
+// modal
+
+.modal-body{
+    .modal-container{
+        margin-top: 20px;
+
+        p{
+            color: #000;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+
+        select{
+            width: 100%;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            padding: 5px;
+            outline: none;
+        }
+
+        textarea{
+            width: 100%;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            outline: none;
+            padding: 10px;
+        }
+
+        input[type=checkbox]{
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.modal-footer{
+    .btn{
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+    }
+
+    .btn-cansel{
+        border: 1px solid #aaa3a3;
+    }
+
+    .btn-post{
+        background: #4F46E5;
+        color: #fff;
+    }
+}
+
 // main
 
 .main{

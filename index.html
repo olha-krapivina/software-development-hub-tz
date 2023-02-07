@@ -55,14 +55,131 @@
                   </li>
                 </ul>
 
-                <button class="nav-button fx-row fx-ai-c">
-                  <img
-                    src="./img/icons_header/plus.png"
-                    class="nav-button-add"
-                    alt="add"
-                  />
-                  New Supply
-                </button>
+                <div>
+                  <button
+                    type="button"
+                    class="nav-button fx-row fx-ai-c"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <img
+                      src="./img/icons_header/plus.png"
+                      class="nav-button-add"
+                      alt="add"
+                    />
+                    New Supply
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Lorem Ipsum</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                          </p>
+
+                          <div class="modal-container modal-calendar">
+                            <p>Date:</p>
+                          </div>
+
+                          <div class="modal-container">
+                            <p>Assigned to:</p>
+                            <form action="">
+                              <select>
+                                <option selected>
+                                  Please enter 2 or more characters
+                                </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                            </form>
+                          </div>
+
+                          <div class="modal-container">
+                            <p>Followed by:</p>
+                            <form action="">
+                              <select>
+                                <option selected>
+                                  Please enter 2 or more characters
+                                </option>
+                                <option value="1">Madeline Tenny</option>
+                                <option value="2">Lawrence Harding</option>
+                                <option value="3">Willa Chavez</option>
+                              </select>
+                            </form>
+                          </div>
+
+                          <div class="modal-container">
+                            <p>Excepteur sint occaecat cupidatat</p>
+                            <form action="">
+                              <div>
+                                <input type="checkbox" id="" />
+                                <label for="" name="" class=""
+                                  >Lorem ipsum dolor sit amet *</label
+                                >
+                              </div>
+                              <div>
+                                <input type="checkbox" id="" />
+                                <label for="" name="" class=""
+                                  >Lorem ipsum dolor sit amet *</label
+                                >
+                              </div>
+                              <div>
+                                <input type="checkbox" id="" />
+                                <label for="" name="" class=""
+                                  >Lorem ipsum dolor sit amet *</label
+                                >
+                              </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-container">
+                            <p>Add Comment</p>
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows="10"
+                              placeholder="Add your comment"
+                            ></textarea>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-cansel"
+                            data-bs-dismiss="modal"
+                          >
+                            Cancel
+                          </button>
+                          <button type="button" class="btn btn-post">
+                            Post
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
@@ -113,7 +230,9 @@
                 <th>
                   <div class="fx-row">
                     <input type="checkbox" id="name-hotel" />
-                    <label for="name-hotel">Name</label>
+                    <label for="name-hotel" name="g1" class="chk-all"
+                      >Name</label
+                    >
                   </div>
                 </th>
                 <th>Supplier</th>

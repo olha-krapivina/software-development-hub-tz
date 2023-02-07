@@ -118,7 +118,7 @@ function tableContent(profile) {
             <form>
               <div class = "fx-row">
                   <input type="checkbox" id="hotel"
-                  <label for="hotel">${user.hotel}</label>
+                  <label for="hotel" name=g1>${user.hotel}</label>
               </div>
             </form>
           </div>
@@ -169,3 +169,23 @@ function tableContent(profile) {
   }
 }
 tableContent(tableHTML);
+
+// $(document).on("change", "input[type=checkbox]", function () {
+//   var $this = $(this),
+//     $chks = $(document.getElementsByName(this.name)),
+//     $all = $chks.filter(".chk-all");
+
+//   if ($this.hasClass("chk-all")) {
+//     $chks.prop("checked", $this.prop("checked"));
+//   } else
+//     switch ($chks.filter(":checked").length) {
+//       case +$all.prop("checked"):
+//         $all.prop("checked", false).prop("indeterminate", false);
+//         break;
+//       case $chks.length - !!$this.prop("checked"):
+//         $all.prop("checked", true).prop("indeterminate", false);
+//         break;
+//       default:
+//         $all.prop("indeterminate", true);
+//     }
+// });
